@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<div class="title">2019年配送条线知识竞赛活动</div>
+		<div class="welcomAndRegister">
+			<div class="welcome">
+				<div class="name">
+					你好, &nbsp;&nbsp;陈家洛
+				</div>
+				<div class="thanks">
+					感谢您的参与
+				</div>
+			</div>
+			<div class="qiandao" id="jumptoRegister">
+				签到
+			</div>
+		</div>
+		<!-- 	<div class="welcome">
+		<div class="name">
+			你好, &nbsp;&nbsp;陈家洛
+		</div>
+		<div class="thanks">
+			感谢您的参与
+		</div>
+	</div>
+	<div class="qiandao" id="jumptoRegister">
+		签到
+	</div> -->
+		<div class="Credit">
+			<div class="nowCredit">
+				目前积分<span class="number" id="curCredit">3</span>
+			</div>
+			<div class="note">连续签到可额外获得积分</div>
+			<div class="button">
+				<div>
+					<img id="threeday" src="pic/button.png" >
+					<div>3天</div>
+				</div>
+				<div>
+					<img id="sevenday" src="pic/button.png" >
+					<div>7天</div>
+				</div>
+				<div>
+					<img id="fifteenday" src="pic/button.png">
+					<div>15天</div>
+				</div>
+				<div>
+					<img id="twentyoneday" src="pic/button.png" >
+					<div>21天</div>
+				</div>
+				<div>
+					<img id="thirtyday" src="pic/button.png" >
+					<div>30天</div>
+				</div>
+			</div>
+			<div class="totalnumber">已有 <span class="number">10,000,000</span> 人参与活动</div>
+		</div>
+		<div class="dati">
+			<div class="datititle">
+				限时答题 挣积分
+			</div>
+			<div class="D">
+				D
+			</div>
+			<div class="datiwz">
+				答题
+			</div>
+			<div class="canyu" id="canyu">
+				立马参与
+			</div>
+		</div>
+
+		<div class="logo">
+			<div class="dazdlogo">
+				<div class="dalogo">
+					<img src="pic/dazdlogo.png">
+				</div>
+				<div class="zslogo">
+					<img src="pic/zsjs.png">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#threeday').attr('src','pic/yiling.png')
+			$('#sevenday').attr('src','pic/yiling.png')
+		})
+		$("#jumptoRegister").click(function() {
+			location.href = 'register.html'
+		})
+		$("#canyu").click(function() {
+			location.href = 'exercises.html'
+		})
+		$('#threeday').click(function(){
+			$('#threeday').attr('src','pic/yiling.png')
+		})
+		$('#fifteenday').click(function(){
+			$('#fifteenday').attr('src','pic/yiling.png')
+			var CurCredit = parseInt($('#curCredit').text())+10;
+			console.log(CurCredit)
+			$('#curCredit').html(CurCredit)
+		})
+	</script>
+
+
+
+</html>

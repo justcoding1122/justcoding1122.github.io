@@ -1,0 +1,158 @@
+* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			height: 100%;
+			width: 100%;
+			background-image: url(../pic/registerbg.jpg);
+			background-size: 127%;
+		}
+
+		.title {
+			margin-top: 9%;
+			height: 23px;
+			width: 100%;
+		}
+
+		.back {
+			display: inline-block;	
+			height: 23px;
+			width: 20px;
+			margin-left: 5%;
+			background-image: url(../pic/backbutton.png);
+			background-size: 100%;
+			float: left;
+		}
+
+		.titlename {
+			display: inline-block;
+			float: left;
+			margin-left: 30%;
+			text-align: center;
+			font-weight: bold;
+			color: white;
+			font-size: 19px;
+		}
+
+		.calendar {
+			position: relative;
+			background-color: white;
+			height: 350px;
+			width: 90%;
+			margin-left: 5%;
+			border-radius: 6px;
+			margin-top: 13%;
+			box-shadow: 0px 4px 5px rgba(0, 0, 255, .2)
+		}
+
+		.calendar .Today {
+			position: absolute;
+			width: 100%;
+			margin-top: 3%;
+			text-align: center;
+			font-weight: bold;
+			font-size: 1rem;
+		}
+
+		.weekdays {
+			margin: 0;
+			padding: 4.5% 0;
+		}
+
+		#cldFrame {
+			position: absolute;
+			margin-top: 15%;
+			margin-left: 1%;
+			width: 100%;
+		}
+
+		#cldBody {
+			/* position: absolute; */
+			width: 100%;
+		}
+
+		#week td {
+			font-size: 15px;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		thead {
+			width: 70%;
+		}
+
+		td {
+			display: inline-block;
+			width: 11%;
+			color: #666;
+			margin-left: 2.5%;
+			text-align: center;
+			font-size: 0.8rem;
+			opacity: .8;
+		}
+
+		.days {
+			padding: 8% 0;
+			margin: 0;
+		}
+		.curDate{
+		    color: red;
+		    font-weight: bold;
+		}
+		.pastDate{
+			color: #628FC1;
+			background-color: #DDDDDD;
+		}
+
+		#tbody td {
+			list-style-type: none;
+			display: inline-block;
+			width: 10%;
+			text-align: center;
+			/* background-color: #888888; */
+			margin-left:3.5%;
+			margin-top: 2.5%;
+			border-radius: 20px;
+			font-size: 15px;
+			line-height: 35px;
+			/* color: #777; */
+			font-weight: bold;
+		}
+		
+		.registerDays{
+			margin-top: 5%;
+			position: relative;
+			width: 90%;
+			margin-left: 5%;
+			height: 6%;
+			border-radius: 0.4375rem;
+			border: 2px solid rgba(0,0,0,.1);
+		}
+		.registerText{
+			margin-left: 5%;
+			height: 100%;
+			line-height: 55px;
+			font-weight: 600;
+		}
+		.registerText span{
+			font-size: 1.25rem;
+		}
+		.registerbutton{
+			position: relative;
+			width: 26%;
+			margin-top: 15%;
+			margin-left: 37%;
+		}
+		.note{
+			position: relative;
+			margin-top: 3%;
+			font-size: 14px;
+			color: dodgerblue;
+			font-weight: bold;
+			text-align: center;
+		}
+		

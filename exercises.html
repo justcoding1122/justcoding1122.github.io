@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/exercises.css"/>
+	</head>
+	<body>
+		<div class="back" id="back"></div>
+		<div class="time">时间<span id="codeTime"> 05:00</span></div>
+		<div class="tihao">第<span class="currQuestion">1</span>题 共<span class="totalQuestion">5</span>题</div>
+		<div class="Question">HA的中文是什么意思？</div>
+		<div class="AArea">
+			<div class="Answer"><span>A</span>n.林地</div>
+			<div class="Answer"><span>B</span>n.求爱 求偶</div>
+			<div class="Answer"><span>C</span>n.强度 强烈</div>
+			<div class="Answer"><span>D</span>n.艺术家 艺人</div>
+		</div>
+		
+		<div class="logo">
+			<div class="dazdlogo">
+				<div class="dalogo">
+					<img src="pic/whitedazdlogo.png" >
+				</div>
+				<div class="zslogo">
+					<img src="pic/whitezsjslogo.png" >
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+	<script type="text/javascript">
+		$('#back').click(function(){
+			location.href = 'index.html'
+		})
+		$(document).ready(function(){  
+		     Timer()
+		});  
+		function Timer(){
+		    var m=04;
+		     var s=59;
+		     setInterval(function(){
+		       if(s<10){
+		       //如果秒数少于10在前面加上0
+		         $('#codeTime').html(' 0'+m+':0'+s);
+		       }else{
+		         $('#codeTime').html(' 0'+m+':'+s);
+		       }
+		       s--;
+		       if(s<0){
+		       //如果秒数少于0就变成59秒
+		         s=59;
+		         m--;
+		       }
+		     },1000)
+		}
+	</script>
+</html>

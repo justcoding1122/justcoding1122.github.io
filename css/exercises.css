@@ -1,0 +1,87 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-image: url(../pic/exercisebg.jpg);
+			background-size: 127%,100%;
+		}
+		.back{
+			margin-top: 9%;
+			height: 23px;
+			width: 20px;
+			margin-left: 5%;
+			background-image: url(../pic/backbutton.png);
+			background-size: 100%;
+		}
+		.time{
+			margin: 0;
+			position: relative;
+			background-color: white;
+			height: 2rem;
+			width: 80%;
+			margin-left: 10%;
+			margin-top: 7%;
+			border-radius: 5px;
+			text-align: center;
+			line-height: 2rem;
+			font-weight: bold;
+		}
+		.tihao{
+			margin-top: 2%;
+			text-align: center;
+			color: white;
+			font-size: 25px;
+		}
+		.tihao .currQuestion{
+			color: orange;
+		}
+		.tihao .totalQuestion{
+			color: orangered;
+		}
+		.Question{
+			margin-top: 8%;
+			font-size: 17px;
+			font-weight: 700;
+			color: white;
+			margin-left: 15%;
+		}
+		.AArea{
+			margin-top: 14%;
+		}
+		.AArea .Answer{
+			margin: 0;
+			position: relative;
+			background-color: white;
+			height: 3rem;
+			width: 80%;
+			margin-left: 10%;
+			margin-top: 7%;
+			border-radius: 30px;
+			line-height: 3rem;
+			font-weight: bold;
+		}
+		.AArea .Answer span{
+			margin-right: 15%;
+			margin-left: 10%;
+		}
+		.logo{
+			width: 100%;
+			height: 150px;
+			margin-top: 15%;
+			position: relative;
+		}
+		.logo .dalogo img{
+			position: absolute;
+			width: 24%;
+			height: 60%;
+			margin-top: 8%;
+			margin-left: 15%;
+		}
+		.logo .zslogo img{
+			position: absolute;
+			width: 24%;
+			height: 60%;
+			margin-top: 8%;
+			margin-left: 60%;
+		}
